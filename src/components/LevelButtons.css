@@ -2,12 +2,13 @@
 .buttons {
   text-align: center;
   margin: 5px 0 20px;
+
 }
 .buttons button {
   margin: 10px;
   padding: 10px;
   background: lightsteelblue;
-  width: 100px;
+  width: 200px;
   border: none;
 }
 .buttons button:hover {

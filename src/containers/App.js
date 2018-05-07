@@ -94,16 +94,17 @@ class App extends React.Component {
 					setLevelMedium={this.setLevelMedium.bind(this)}
 					setLevelHard={this.setLevelHard.bind(this)}
 				/>
-   				<div>
-            		<button onClick={this.handleCheck}>Check</button>
-            		<button onClick={this.handleSolve}>Solve</button>
-            		<button onClick={this.handleRestart}>Restart</button>
-			   </div>
-        		<Board board={this.state.board}
-               		initialBoard={this.state.initialBoard}
-               		updateBoard={this.updateBoard}
-               	/>
-      		</div>		   
+   			<div className={style.buttonGame}>
+      		<button onClick={this.handleCheck}>Check</button>
+      		<button onClick={this.handleSolve}>Solve</button>
+      		<button onClick={this.handleRestart}>Restart</button>
+			  </div>
+        <Board 
+          board={this.state.board}
+       		initialBoard={this.state.initialBoard}
+       		updateBoard={this.updateBoard}
+       	/>
+      </div>		   
 		);
 	}
 }
