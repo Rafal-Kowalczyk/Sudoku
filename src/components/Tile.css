@@ -1,0 +1,24 @@
+.tile {
+  	height: 60px;
+  	width: 60px;
+  	text-align: center;
+  	border: 2px solid #3498db;
+  	color: blue;
+  	font-size: 20px;
+}
+
+.tile:nth-child(3n) {
+  	border-right: 5px solid #2c3e50;
+}
+
+.tile:nth-child(9n) {
+  	border: 2px solid #3498db;
+}
+
+.tile:nth-child(n+19):nth-child(-n+27) {
+  	border-bottom: 5px solid #2c3e50;	
+}
+
+.tile:nth-child(n+46):nth-child(-n+54) {
+  	border-bottom: 5px solid #2c3e50;	
+}
