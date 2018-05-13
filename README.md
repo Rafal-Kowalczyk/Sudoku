@@ -3,7 +3,7 @@
 Webpack + React
 
 
-#Start application:
+# Start application:
 
 Install dependencies
   npm install
