@@ -1,31 +1,30 @@
 body {
-	background: lightgrey;
+	background: url(https://images.unsplash.com/photo-1511789696873-4d1cfdbb058a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0bf26e3a0a6a225b4872120b309bd6cf&auto=format&fit=crop&w=1372&q=80)no-repeat 0/cover;
 }
 
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 
 .buttonGame button {
-	margin: 10px;
-	margin-bottom: 25px;
-	padding: 5px;
-	width: 80px;
+	margin: 0 15px;
+	margin-top: 25px;
+	padding: 4px;
+	width: 100px;
 	text-align: center;
-	font-size: 12px;
-	font-weight: 700;
-	border: 1px solid red;
+	font-size: 11px;
+	font-weight: 600;
+	border: 1px solid #FF6347;
 	border-radius: 8%;
 	background-color: white;
 	display: inline-block;
 }
 
 .buttonGame button:hover {
-	transform: scale(1.2);
-	background-color: red;
+	transform: scale(1.1);
+	background-color: #FF6347;
 	color: white;
 }

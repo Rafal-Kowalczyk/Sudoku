@@ -49,7 +49,7 @@ class App extends React.Component {
 	handleSolve(e) {
   	const solve = sudoku.solve(this.state.board);
   	if (solve === false) {
-    		alert ('press restart to start again');
+    		alert ('Press restart to start again');
   	} else {
     		this.setState({
       	board: solve
@@ -68,9 +68,9 @@ class App extends React.Component {
   	const solve = sudoku.solve(this.state.board);
   	const myBoard = this.state.board;
   	if (myBoard  === solve) {
-  		alert("good solution"); 
+  		alert("Good job :)"); 
   	} else {
-  		alert("wrong solution");
+  		alert("Wrong solution :(");
   	}
 
 	}
@@ -93,17 +93,17 @@ class App extends React.Component {
 					setLevelEasy={this.setLevelEasy.bind(this)}
 					setLevelMedium={this.setLevelMedium.bind(this)}
 					setLevelHard={this.setLevelHard.bind(this)}
-				/>
-   			<div className={style.buttonGame}>
-      		<button onClick={this.handleCheck}>Check</button>
-      		<button onClick={this.handleSolve}>Solve</button>
-      		<button onClick={this.handleRestart}>Restart</button>
-			  </div>
+				/>   			
         <Board 
           board={this.state.board}
        		initialBoard={this.state.initialBoard}
        		updateBoard={this.updateBoard}
        	/>
+        <div className={style.buttonGame}>
+          <button onClick={this.handleCheck}>Check</button>
+          <button onClick={this.handleSolve}>Solve</button>
+          <button onClick={this.handleRestart}>Restart</button>
+        </div>
       </div>		   
 		);
 	}

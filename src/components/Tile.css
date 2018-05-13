@@ -1,10 +1,11 @@
 .tile {
-  	height: 60px;
-  	width: 60px;
+  	height: 46px;
+  	width: 46px;
   	text-align: center;
   	border: 1px solid #3498db;
   	color: blue;
-  	font-size: 20px;
+  	font-size: 14px;
+    background: #FFEBCD;
 }
 
 .tile:nth-child(3n) {
